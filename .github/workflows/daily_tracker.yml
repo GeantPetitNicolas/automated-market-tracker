@@ -2,22 +2,24 @@ name: Daily Market Tracker
 
 on:
   schedule:
-    # Se ejecuta todos los días a las 12:00 UTC (9:00 AM hora de Argentina)
     - cron: '0 12 * * *'
-  workflow_dispatch: # Permite ejecutar el script manualmente desde GitHub cuando quieras
+  workflow_dispatch:
+
+permissions:
+  contents: write # Permiso explícito para hacer commit/push
 
 jobs:
   run-tracker:
     runs-on: ubuntu-latest
 
     steps:
-    # 1. Copiar el código del repositorio a la máquina virtual
+    # 1. Copiar código con la versión v4
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
-    # 2. Configurar Python en el servidor
+    # 2. Configurar Python con la versión v5
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
@@ -31,7 +33,7 @@ jobs:
     - name: Run Market Tracker Script
       run: python main.py
 
-    # 5. Guardar los cambios (market_history.json) de vuelta en GitHub
+    # 5. Guardar los cambios
     - name: Commit and Push changes
       run: |
         git config --global user.name "github-actions[bot]"
