@@ -75,3 +75,4 @@
 {"timestamp": "2026-10-17 15:19:09", "fiat_rates": {"USD_ARS": 1514.57}, "crypto_rates_usd": {"bitcoin": 81495, "ethereum": 2421.47}, "crypto_rates_ars": {"bitcoin": 123429515.42, "ethereum": 3667474.92}}
 {"timestamp": "2026-10-18 15:40:29", "fiat_rates": {"USD_ARS": 1514.57}, "crypto_rates_usd": {"bitcoin": 81009, "ethereum": 2373.19}, "crypto_rates_ars": {"bitcoin": 122693436.59, "ethereum": 3594351.7}}
 {"timestamp": "2026-10-19 18:35:27", "fiat_rates": {"USD_ARS": 1514.57}, "crypto_rates_usd": {"bitcoin": 81821, "ethereum": 2394.44}, "crypto_rates_ars": {"bitcoin": 123923263.78, "ethereum": 3626536.22}}
+{"timestamp": "2026-10-20 16:38:54", "fiat_rates": {"USD_ARS": 1523.35}, "crypto_rates_usd": {"bitcoin": 82570, "ethereum": 2444.3}, "crypto_rates_ars": {"bitcoin": 125782728.76, "ethereum": 3723516.09}}
